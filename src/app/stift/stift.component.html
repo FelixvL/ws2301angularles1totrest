@@ -1,0 +1,15 @@
+
+<button (click)="nieuweFunctieRest()">REST</button>
+<h2>{{winkellogo}}</h2>
+<h3 style="background-color:{{stift1.kleur}};">Mijn stift heeft de kleur: {{winkellogo}} met {{aantalvm}} te gaan</h3>
+<button (click)="opmaken()">-</button>
+<button (click)="kleurVeranderen()">Veranderen</button>
+{{stift1.kleur}}
+<div *ngIf="stift2">The second Stift is called {{ stift2.kleur }} {{ stift2.merk }}</div>
+
+<button (click)="vulStiften()">Fill Students</button>
+<div *ngIf="stiften">
+<ul>
+<li *ngFor="let pen of stiften">er is een nieuwe pen: {{ pen.kleur }}</li>
+</ul>
+</div>
